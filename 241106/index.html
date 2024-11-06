@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Sayfa</title>
+</head>
+<body>
+    <h1>ABC Tasarım Programı Kurulum ve Satış Sözleşmesi</h1>
+
+    <form action="" method="post">
+         <fieldset>
+            <legend>Sözleşme Onay</legend>
+            <input type="checkbox" id="onay" name="onay" 
+            value="1">
+            <label for="onay">Aşağıdaki bilgilerin doğruluğunu 
+            kabul ediyorum ve sözleşmeyi onaylıyorum.</label><br>
+            <input type="submit" id="btnK" name="btnK" value="Formu Kaydet">
+            <input type="reset" id="btnT" name="btnT" value="Formu Temizle">
+         </fieldset> 
+         <fieldset>
+            <legend>Kullanıcı Bilgileri</legend>
+            <table border="1">
+                <tr>
+                 <td>Form Güvenlik ID</td>
+                 <td></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>
+                    <input type="text" id="gID" name="gID" value="asfg" disabled>
+                    <input type="hidden" id="gID" name="gID" value="asfg" >
+                    </td>
+                   </tr>
+
+                   <tr>
+                    <td>Ad</td>
+                    <td><input type="text"id="ad" name="ad" placeholder="adınız girin"></td>
+                   </tr>
+
+                   <tr>
+                    <td>Soyad</td>
+                    <td><input type="text"id="sad" name="sad" placeholder="soyadınız girin" required></td>
+                   </tr>
+
+                   <tr>
+                    <td>Yaş</td>
+                    <td><input type="number" nin="20" max="100" step="2"></td> 
+                   </tr>
+
+                   <tr>
+                    <td>Mail</td>
+                    <td><input type="email" id="eposta" name="eposta"></td>
+                   </tr>
+
+                   <tr>
+                    <td>Fotograf Ekle</td>
+                    <td><input type="file" id="dosya" name="dosya"></td>
+                   </tr>
+
+                   <tr>
+                    <td>Ürün Şifresi (6 haneli)</td>
+                    <td><input type="password" id="sifre" name="sifre" required maxlength="6"></td>
+                   </tr>
+
+            </table>
+         </fieldset>
+         <legend>Diğer Bilgiler</legend>
+         <table>
+            <tr>
+            <th colspan="2">
+                Buradaki alanlar Mesleki Deneyim'i Kapsar
+            </th>
+            </tr>
+
+            <tr>
+                <td>Sektör giriş tarihi</td>
+                <td>
+                    <input type="date" id="tarih" name="tarih" value="2010-01-01">
+                </td>
+               </tr>
+
+               <tr>
+                <td>Sektör Deneyi</td>
+                <td><input type="radio" id="yili" name="yil" value="1"> 1-5 yıl</td>
+               </tr>
+               <label><input type="radio" id="yili" name="yil" value="2"><br>6-10 yıl</label>
+               <label><input type="radio" id="yili" name="yil" value="1">15 yıl üzeri</label><br>
+               <tr>
+                <td>Proglama Dilleri</td>
+                <td></td>
+               </tr>
+
+               <tr>
+                <td><select size="5" name="pdil" id="pdil">
+                <option value="1">C#</option>
+                <option value="2"selected></option>>PHP</option>
+                <option value="3">JAVA</option>
+                <option value="4">JavaScript</option>
+                <option value="5">Python</option>
+                <option value="6">Pascal</option>
+                </select></td>
+               </tr>
+         </table>
+         <fieldset>
+            <fieldset>
+                <legend>Sözleşme Kopyası</legend>
+                <textarea readonly cols="50" rows="5" id="sozlesme" id="sozlesme">
+                 Lorem ipsum dolor sit, amet consectetur
+                adipisicing elit. Non quas rem deleniti fugiat aliquid odio temporibus unde doloribus 
+                assumenda explicabo repellat dicta quam illum molestiae aperiam cum, eaque ex recusandae?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, vitae deserunt? Officia 
+                quo cumque quas tempora autem numquam voluptatibus, aliquam provident? Dolores, nisi. Ipsam
+                 doloribus, praesentium vitae doloremque illum tempora.
+                Fugiat vero quo illum, totam explicabo consectetur laudantium soluta, provident qui similique delectus? 
+                Adipisci, eveniet modi odit cum iure enim aspernatur praesentium, a minima dolorum pariatur in perferendis laudantium sunt.
+                Quae, repellendus porro ab, enim blanditiis, sequi doloribus totam vitae
+                 necessitatibus quasi error illum architecto esse deleniti quod! Voluptate, et repellat aliquam magnam
+                  non ut quisquam vero quia mollitia accusamus.
+                Minima molestias harum nobis, aliquam ratione velit nihil reprehenderit 
+                amet veniam similique officia odit architecto fuga repudiandae. Delectus ipsum corrupti libero eveniet fugiat. Vitae sequi corporis recusandae expedita molestiae voluptates!
+                Repellendus nesciunt odio debitis soluta quo atque, architecto itaque
+                 consequuntur non quisquam rerum fugit in voluptates ad alias eligendi ea qui sequi! Doloribus ipsa necessitatibus officiis tempora minima tenetur eligendi.
+                Sunt in doloremque fuga velit labore error exercitationem quo blanditiis 
+                corporis suscipit harum laudantium molestiae aliquid veritatis hic vero, debitis
+                 non ipsum temporibus dicta laboriosam magnam libero molestias! Obcaecati, voluptatibus?
+                </textarea>
+            </fieldset>
+         </fieldset>
+         <fieldset>
+            <legend>Mail Listesi</legend>
+            Mail listesine katılmak <b>istiyorum</b>
+            <input type="radio" id="radio" name="mliste" checked><br>
+            Mail listesine katılmak <b>istemiyorum<u></u></b>
+            <input type="radio" id="radio" name="mliste"><br>
+         </fieldset>
+    </form>
+</body>
+</html>
